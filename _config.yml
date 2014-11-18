@@ -1,0 +1,18 @@
+#Site settings
+title: Strong Conjunctions
+email: strongconjunctions@gmail.com
+description: "UX // Design // Development"
+
+
+face: BUUU3.jpg
+
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: :nested

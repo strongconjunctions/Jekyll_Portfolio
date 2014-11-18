@@ -1,0 +1,69 @@
+
+header
+  height: 650px
+  background: url(../img/109H.jpg) center center
+  background-size: cover   
+  // to stretch the bg to cover the screen
+  
+
+  .logo
+    +size(50px)  
+    // this is a bourbon mixin for logo placement
+    float: left
+    margin: 10px 0 0 30px
+    path
+      fill: #fff
+
+  nav
+    float: right
+    margin: 30px 30px 0 0 
+
+    a
+      display: inline-block
+      margin-left: 20px
+
+      color: rgba(0,0,0,0.4)
+      @extend %small-bold   
+      // placeholders.sass has the full code
+
+      &:hover
+        color: #fgfgfg
+
+
+  
+      
+  h1
+    text-align: center
+    font:
+      size: 60px
+      weight: 700
+    color: white
+    text-transform: uppercase  
+    letter-spacing: 0.1em
+    margin-bottom: 40px
+    clear: both               
+    //  never forget to use clear:both!
+    padding-top: 170px
+      
+
+
+    span
+      display: inline-block
+      padding: 0.2em 0.2em
+      border: white solid 10px
+
+  .kicker
+    text-align: center
+    color: white
+    font:
+      size: 14pt
+      weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.08em
+
+
+  
+
+
+
+    
