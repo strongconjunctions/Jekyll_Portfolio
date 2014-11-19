@@ -1,27 +1,23 @@
 footer
-  background-image: url(../img/108H.jpg) center center
+  height: 200px
+  background: url(../img/108H.jpg) center center
   background-repeat: no-repeat, no-repeat
-  background-size: 50px 50px, cover
-  background-position: 30px 50px, 50% 50%
   background-size: cover   
   
  
   .lockup
-    padding: 50px 30px
+    padding-top: 70px
+    padding-bottom: 30px
     +clearfix     
     // bourbon mixin
 
     .logo
-      +size(50px)  
-      // this is a bourbon mixin for logo placement
-      float: left
-      margin-right: 30px
-      
-      path
-        fill: #fff
+      @extend %sc-logo
+      margin: auto 30px
+
 
     .content-wrap
-      float: left
+      float: right
       
 
       .copyright
