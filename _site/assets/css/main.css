@@ -324,7 +324,7 @@ footer {
           color: rgba(0, 0, 0, 0.7); }
 
 .face-lockup {
-  max-width: 800px;
+  max-width: 745px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -343,15 +343,15 @@ footer {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: center; }
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify; }
   .face-lockup .face-img {
     height: 185px;
     width: 185px;
