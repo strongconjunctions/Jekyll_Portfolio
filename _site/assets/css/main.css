@@ -257,7 +257,7 @@ header .logo, footer .lockup .logo {
     fill: #fff; }
 
 header {
-  height: 600px;
+  height: 500px;
   background: url(../img/109H.jpg) center center;
   background-size: cover; }
   header nav {
@@ -276,7 +276,7 @@ header {
     color: white;
     margin: 0 40px 40px 40px;
     clear: both;
-    padding-top: 190px; }
+    padding-top: 130px; }
     @media screen and (max-width: 600px) {
       header h1 {
         margin: 0 20px 40px 20px;
@@ -362,17 +362,18 @@ footer {
   .face-lockup [class^="icon-"] {
     height: 100px;
     width: 100px;
-    background-color: #f4dec7;
     border-radius: 50%; }
     .face-lockup [class^="icon-"] path {
       fill: #cf6357; }
-    .face-lockup [class^="icon-"].icon-pencil {
+    .face-lockup [class^="icon-"] polygon {
+      fill: #cf6357; }
+    .face-lockup [class^="icon-"].icon-me {
       order: 1; }
-    .face-lockup [class^="icon-"].icon-mouse {
+    .face-lockup [class^="icon-"].icon-projects {
       order: 2; }
-    .face-lockup [class^="icon-"].icon-browser {
+    .face-lockup [class^="icon-"].icon-clients {
       order: 4; }
-    .face-lockup [class^="icon-"].icon-video {
+    .face-lockup [class^="icon-"].icon-contact {
       order: 5; }
 
 /* a media query so that the elements wont overlap, but regroup */

@@ -23,20 +23,23 @@
 
   [class^="icon-"]         
     +size(100px)
-    background-color: $bgcolor
+    // background-color: $bgcolor
     border-radius: 50%   
     // "[class^="icon-"]" is a cool selector, which basically says, select a class, as long as (^) it includes this element (icon-);'border-radius: 50%' turns a square into a circle
 
     path
       fill: $accent-red
 
-    &.icon-pencil
+    polygon
+      fill: $accent-red  
+
+    &.icon-me
       order: 1   
-    &.icon-mouse
+    &.icon-projects
       order: 2      
-    &.icon-browser
+    &.icon-clients
       order: 4   
-    &.icon-video
+    &.icon-contact
       order: 5  
 
 
