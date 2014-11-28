@@ -377,7 +377,7 @@ footer {
       order: 5; }
 
 /* a media query so that the elements wont overlap, but regroup */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 690px) {
   .face-lockup {
     display: block;
     text-align: center;
@@ -394,7 +394,8 @@ footer {
       margin: 0 auto 40px auto;
       border-radius: 50%; }
     .face-lockup [class^="icon-"] {
-      margin: 10px; } }
+      margin: 10px;
+      padding: 5px; } }
 .about-me {
   font-size: 14pt;
   font-weight: 700;
@@ -439,3 +440,6 @@ footer {
       width: 14px;
       margin-right: 5px;
       border-radius: 50%; }
+
+.alt-section {
+  background: #f4dec7; }

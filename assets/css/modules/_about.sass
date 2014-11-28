@@ -1,15 +1,15 @@
 
 .face-lockup
-  max-width: 745px  
-  +display(flex)      
+  max-width: 745px
+  +display(flex)
   // bourbon mixin, which turns your object into a flex box to easily arrange elements
   margin: 0 auto
-  padding: 0 40px     
-  +align-items(center)   
+  padding: 0 40px
+  +align-items(center)
   // this will align the items inside the block horizontally
-  +justify-content(space-between)  
+  +justify-content(space-between)
   // this will distribute the items iinside evenly across the block space in width
-  
+
 
   .face-img
     +size(185px)
@@ -21,36 +21,36 @@
 
 
 
-  [class^="icon-"]         
+  [class^="icon-"]
     +size(100px)
     // background-color: $bgcolor
-    border-radius: 50%   
+    border-radius: 50%
     // "[class^="icon-"]" is a cool selector, which basically says, select a class, as long as (^) it includes this element (icon-);'border-radius: 50%' turns a square into a circle
 
     path
       fill: $accent-red
 
     polygon
-      fill: $accent-red  
+      fill: $accent-red
 
     &.icon-me
-      order: 1   
+      order: 1
     &.icon-projects
-      order: 2      
+      order: 2
     &.icon-clients
-      order: 4   
+      order: 4
     &.icon-contact
-      order: 5  
+      order: 5
 
 
 
 /* a media query so that the elements wont overlap, but regroup */
-@media screen and (max-width: 650px)   
+@media screen and (max-width: 690px)
   .face-lockup
-    display: block   
+    display: block
     // upon reaching 650 px in width the elements will reform vertically under each other
     text-align: center
-    padding: 0 40px     
+    padding: 0 40px
 
     div
       display: inline-block
@@ -59,13 +59,14 @@
       display: block
       background-position: center center
       background-repeat: no-repeat
-      width: auto  
+      width: auto
       +size(180px)
       margin: 0 auto 40px auto
       border-radius: 50%
 
-    [class^="icon-"]  
-      margin: 10px  
+    [class^="icon-"]
+      margin: 10px
+      padding: 5px
 
 
 .about-me
@@ -73,13 +74,13 @@
     size: 14pt
     weight: 700
     color: $accent-dark
-  letter-spacing: 0.15em  
-    
-  
+  letter-spacing: 0.15em
+
+
 
 .about-text
   max-width: 750px
-  padding: 0 40px     
+  padding: 0 40px
   /* put at least 10 px padding so that the text does not touch the sides of the phone */
   margin: 60px auto
   text-align: justify
@@ -91,7 +92,7 @@
 
 
 
-.skill-lockup  
+.skill-lockup
   max-width: 600px
   margin: 120px auto
   padding: 0 40px
