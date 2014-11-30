@@ -1,2 +1,127 @@
-.alt-section
+.projects-section
   background: $bgcolor
+  height: 800px
+
+  .projects-header
+    margin-top: 0px
+    @extend %h1-bold
+
+
+
+  .thumb-container
+    max-width: 750px
+    max-height: 400px
+    margin: 0px auto
+    padding-bottom: 120px
+    +clearfix
+
+    .thumb
+      width: 245px
+      /* height: 130px */
+      background: none
+      display: block
+      float: left
+      position: relative
+      padding-top: 20%
+      overflow: hidden
+
+      background:
+        image: url(../img/projects/thumbs/.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+      .thumb-overlay
+        +position(absolute, 100% 0px null 0px) // this will stretch this element to all sides
+        height: 100% // this will make it the same height as its parent
+        background: fade-out($accent-red, .2)
+        text-align: center
+        justify-content: center
+        +transition
+
+        strong
+          display: block
+          position: relative
+          padding: 40px 0
+          @extend %label-semibold
+          color: #fff
+          line-height: 1.5em
+
+
+      &:hover .thumb-overlay
+        +position(absolute, 0% 0px null 0px) // When you hover over the 'thumb' the overlay will get this position. This will stretch it  to all sides
+
+
+      /*====== Project Thumbs ======*/
+
+    .thumb-moobli
+      background:
+        image: url(../img/projects/thumbs/moobli.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-ribe
+      background:
+        image: url(../img/projects/thumbs/ribe.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-jupiter
+      background:
+        image: url(../img/projects/thumbs/jupiter.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-zeigende
+      background:
+        image: url(../img/projects/thumbs/zeigende.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-nauka
+      background:
+        image: url(../img/projects/thumbs/nauka.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-liverpool
+      background:
+        image: url(../img/projects/thumbs/liverpool.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-zeigende
+      background:
+        image: url(../img/projects/thumbs/zeigende.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-snowcat
+      background:
+        image: url(../img/projects/thumbs/snowcat.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+    .thumb-cv
+      background:
+        image: url(../img/projects/thumbs/cv.jpg)
+        repeat: no-repeat
+        size: cover
+        position: center center
+
+
+
+
+
+
+
+
+

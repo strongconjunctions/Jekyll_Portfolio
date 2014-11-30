@@ -15,8 +15,14 @@
     +size(185px)
     order: 3
     border-radius: 50%
-    background-position: center center
-    background-repeat: no-repeat
+    background:
+      position: center center
+      repeat: no-repeat
+
+    &:hover
+      +transition
+      +size(100px)
+      background-color: rgba(29, 29, 43, .5)
 
 
 
@@ -70,11 +76,7 @@
 
 
 .about-me
-  font:
-    size: 14pt
-    weight: 700
-    color: $accent-dark
-  letter-spacing: 0.15em
+  @extend %h1-bold
 
 
 

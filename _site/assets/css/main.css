@@ -241,6 +241,18 @@ h3, header nav a, footer .lockup .content-wrap a {
   font-weight: 700;
   text-transform: uppercase; }
 
+.projects-section .thumb-container .thumb .thumb-overlay strong {
+  font-size: 14pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em; }
+
+.about-me, .projects-section .projects-header {
+  font-size: 15pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
 .skill-lockup .skill-icons span {
   background: #cf6357; }
 
@@ -359,6 +371,13 @@ footer {
     border-radius: 50%;
     background-position: center center;
     background-repeat: no-repeat; }
+    .face-lockup .face-img:hover {
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+      height: 100px;
+      width: 100px;
+      background-color: rgba(29, 29, 43, 0.5); }
   .face-lockup [class^="icon-"] {
     height: 100px;
     width: 100px;
@@ -396,12 +415,6 @@ footer {
     .face-lockup [class^="icon-"] {
       margin: 10px;
       padding: 5px; } }
-.about-me {
-  font-size: 14pt;
-  font-weight: 700;
-  font-color: #534741;
-  letter-spacing: 0.15em; }
-
 .about-text {
   max-width: 750px;
   padding: 0 40px;
@@ -441,5 +454,99 @@ footer {
       margin-right: 5px;
       border-radius: 50%; }
 
-.alt-section {
-  background: #f4dec7; }
+.projects-section {
+  background: #f4dec7;
+  height: 800px; }
+  .projects-section .projects-header {
+    margin-top: 0px; }
+  .projects-section .thumb-container {
+    max-width: 750px;
+    max-height: 400px;
+    margin: 0px auto;
+    padding-bottom: 120px; }
+    .projects-section .thumb-container:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .projects-section .thumb-container .thumb {
+      width: 245px;
+      /* height: 130px */
+      background: none;
+      display: block;
+      float: left;
+      position: relative;
+      padding-top: 20%;
+      overflow: hidden;
+      background-image: url(../img/projects/thumbs/.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      /*====== Project Thumbs ====== */ }
+      .projects-section .thumb-container .thumb .thumb-overlay {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        background: rgba(207, 99, 87, 0.8);
+        text-align: center;
+        justify-content: center;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
+        .projects-section .thumb-container .thumb .thumb-overlay strong {
+          display: block;
+          position: relative;
+          padding: 40px 0;
+          color: #fff;
+          line-height: 1.5em; }
+      .projects-section .thumb-container .thumb:hover .thumb-overlay {
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        left: 0px; }
+    .projects-section .thumb-container .thumb-moobli {
+      background-image: url(../img/projects/thumbs/moobli.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-ribe {
+      background-image: url(../img/projects/thumbs/ribe.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-jupiter {
+      background-image: url(../img/projects/thumbs/jupiter.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-zeigende {
+      background-image: url(../img/projects/thumbs/zeigende.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-nauka {
+      background-image: url(../img/projects/thumbs/nauka.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-liverpool {
+      background-image: url(../img/projects/thumbs/liverpool.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-zeigende {
+      background-image: url(../img/projects/thumbs/zeigende.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-snowcat {
+      background-image: url(../img/projects/thumbs/snowcat.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-container .thumb-cv {
+      background-image: url(../img/projects/thumbs/cv.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
