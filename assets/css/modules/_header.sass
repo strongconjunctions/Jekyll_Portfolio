@@ -1,23 +1,54 @@
-
 header
-  height: 500px
+  height: 450px
   background: url(../img/109H.jpg) center center
   background-size: cover   // to stretch the bg to cover the screen
 
 
   .logo
     @extend %sc-logo
+    margin: 0
+    padding: 30px
 
-  nav
+
+    @media screen and (max-width: 690px)
+      padding: 30px
+      float: none
+      text-align: center
+      display: none
+      clear: both
+
+
+  nav.nav-bar
     float: right
-    margin: 30px 30px 0 0
+    padding: 30px 30px 0 30px
+    display: inline-block
+    position: relative
+    margin: 0 auto
+
+    @media screen and (max-width: 690px)
+      text-align: center
+      position: relative
+      display: block
+      float: none
+      clear: both
+
+
 
     a
       display: inline-block
-      margin-left: 20px
-
+      padding-rigt: 10px
+      padding-left: 10px
       color: rgba(0,0,0,0.4)
       @extend %small-bold   // placeholders.sass has the full code
+
+      @media screen and (max-width: 690px)
+        display: inline-block
+        padding-right: 20px
+        padding-left: 20px
+        margin: 0 auto
+        text-align: center
+        max-width: 100%
+
 
       &:hover
         color: #fgfgfg
@@ -31,23 +62,22 @@ header
       size: 76px
       weight: 700
     color: white
-
-    margin: 0 40px 40px 40px
+    line-height: 1.1em
+    padding: 60px 20px 40px 20px
     clear: both
     //  never forget to use clear:both!
-    padding-top: 130px
+    margin: 0 auto 0 auto
 
-    @media screen and (max-width: 600px)
-      margin: 0 20px 40px 20px
+    @media screen and (max-width: 690px)
+      padding: 135px 20px 40px 20px
       font:
         size: 55px
         weight: 700
 
-    @media screen and (max-width: 490px)
-      margin: 0 20px 40px 20px
-      font:
-        size: 40px
-        weight: 700
+      min-width: 20%
+
+
+
 
 
   .kicker
