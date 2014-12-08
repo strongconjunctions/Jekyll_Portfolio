@@ -607,11 +607,13 @@ footer {
     footer .lockup .logo {
       padding: 30px;
       display: block;
-      margin: 0; }
+      margin: 0;
+      opacity: 0.4; }
       @media screen and (max-width: 690px) {
         footer .lockup .logo {
           float: none;
           margin: 0 auto;
+          padding: 20px;
           display: block;
           text-align: center;
           clear: both; } }
