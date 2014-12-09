@@ -1,21 +1,6 @@
-.projects-section
-  position: relative
-  display: block
-  background-color: $bgcolor
-  height: 800px
+.projects-wrapper
+  background-color: pink
   overflow: hidden
-
-  @media screen and (max-width: 950px)
-    height: 1200px
-    position: relative
-    overflow: hidden
-
-
-  @media screen and (max-width: 690px)
-    background-color: $bgcolor
-
-    height: 2700px
-    position: relative
 
 
 
@@ -24,135 +9,141 @@
     @extend %h1-bold
 
 
-  .thumb-container
-    max-width: 1300px
-    position: relative
-    margin: 0 auto 0 auto
-    padding: 0 30px 0px 30px
-    justify-content: center
+  .projects-slider
+    width: 200%
 
-    @media screen and (max-width: 950px)
-      padding-bottom: 50px
 
-    @media screen and (max-width: 690px)
-      padding-bottom: 50px
+    .thumb-container
+      max-width: 1300px
       position: relative
-
-
-
-
-    .thumb
-      display: block
-      width: 25%  // it's the 30% of the .thumb-container max-width
-      float: left
-      position: relative
-      padding-top: 15%
-      overflow: hidden
+      margin: 0 auto 0 auto
+      padding: 0 30px 0px 30px
+      justify-content: center
 
       @media screen and (max-width: 950px)
-        width: 50%
-        padding-top: 25%
-
+        padding-bottom: 50px
 
       @media screen and (max-width: 690px)
-        width: 100%
-        padding-top: 50%
+        padding-bottom: 50px
+        position: relative
 
 
-      background:
-        image: url(../img/projects/thumbs/.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
-
-      .thumb-overlay
-        +position(absolute, 100% 0px null 0px) // this will stretch this element to all sides
-        height: 100% // this will make it the same height as its parent
-        background: fade-out($accent-red, .2)
-        text-align: center
-        justify-content: center
-        +transition
-        +display(flex)
-        +align-items(center)
-
-        strong
-          display: block
-          position: relative
-          @extend %label-semibold
-          color: #fff
-          line-height: 1.5em
 
 
-      &:hover .thumb-overlay
-        +position(absolute, 0% 0px null 0px) // When you hover over the 'thumb' the overlay will get this position. This will stretch it  to all sides
-        height: 100%
+      .thumb
+        display: block
+        width: 25%  // it's the 30% of the .thumb-container max-width
+        float: left
+        position: relative
+        padding-top: 15%
+        overflow: hidden
+
+        @media screen and (max-width: 950px)
+          width: 50%
+          padding-top: 25%
 
 
-      /*====== Project Thumbs ======*/
+        @media screen and (max-width: 690px)
+          width: 100%
+          padding-top: 50%
 
-    .thumb-moobli
-      background:
-        image: url(../img/projects/thumbs/moobli2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
 
-    .thumb-ribe
-      background:
-        image: url(../img/projects/thumbs/ribe2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
+        background:
+          image: url(../img/projects/thumbs/.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
 
-    .thumb-jupiter
-      background:
-        image: url(../img/projects/thumbs/jupiter2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
+        .thumb-overlay
+          +position(absolute, 100% 0px null 0px) // this will stretch this element to all sides
+          height: 100% // this will make it the same height as its parent
+          background: fade-out($accent-red, .2)
+          text-align: center
+          justify-content: center
+          +transition(600ms)
+          +display(flex)
+          +align-items(center)
 
-    .thumb-zeigende
-      background:
-        image: url(../img/projects/thumbs/zeigende2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
+          strong
+            display: block
+            position: relative
+            @extend %label-semibold
+            color: #fff
+            line-height: 1.5em
 
-    .thumb-nauka
-      background:
-        image: url(../img/projects/thumbs/nauka2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
 
-    .thumb-liverpool
-      background:
-        image: url(../img/projects/thumbs/liverpool2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
+        &:hover .thumb-overlay
+          +position(absolute, 0% 0px null 0px) // When you hover over the 'thumb' the overlay will get this position. This will stretch it  to all sides
+          height: 100%
 
-    .thumb-zeigende
-      background:
-        image: url(../img/projects/thumbs/zeigende2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
 
-    .thumb-album
-      background:
-        image: url(../img/projects/thumbs/album2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
+        /*====== Project Thumbs ======*/
 
-    .thumb-snowcat
-      background:
-        image: url(../img/projects/thumbs/snowcat2.jpg)
-        repeat: no-repeat
-        size: cover
-        position: center center
+      .thumb-moobli
+        background:
+          image: url(../img/projects/thumbs/moobli2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
 
+      .thumb-ribe
+        background:
+          image: url(../img/projects/thumbs/ribe2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+      .thumb-jupiter
+        background:
+          image: url(../img/projects/thumbs/jupiter2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+      .thumb-zeigende
+        background:
+          image: url(../img/projects/thumbs/zeigende2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+      .thumb-nauka
+        background:
+          image: url(../img/projects/thumbs/nauka2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+      .thumb-liverpool
+        background:
+          image: url(../img/projects/thumbs/liverpool2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+      .thumb-zeigende
+        background:
+          image: url(../img/projects/thumbs/zeigende2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+      .thumb-album
+        background:
+          image: url(../img/projects/thumbs/album2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+      .thumb-snowcat
+        background:
+          image: url(../img/projects/thumbs/snowcat2.jpg)
+          repeat: no-repeat
+          size: cover
+          position: center center
+
+
+    .projects-container
 
 
 

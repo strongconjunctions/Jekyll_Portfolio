@@ -241,13 +241,13 @@ h3, header nav.nav-bar a, footer .lockup .content-wrap a {
   font-weight: 700;
   text-transform: uppercase; }
 
-.projects-section .thumb-container .thumb .thumb-overlay strong {
+.projects-wrapper .projects-slider .thumb-container .thumb .thumb-overlay strong {
   font-size: 14pt;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.22em; }
 
-.about-me, .projects-section .projects-header {
+.about-me, .projects-wrapper .projects-header {
   font-size: 15pt;
   font-weight: 700;
   text-transform: uppercase;
@@ -293,6 +293,7 @@ header {
         text-align: center;
         position: relative;
         display: block;
+        padding: 30px 0 0 0;
         float: none;
         clear: both; } }
     header nav.nav-bar a {
@@ -303,13 +304,13 @@ header {
       @media screen and (max-width: 690px) {
         header nav.nav-bar a {
           display: inline-block;
-          padding-right: 20px;
-          padding-left: 20px;
+          padding-right: 8px;
+          padding-left: 8px;
           margin: 0 auto;
           text-align: center;
           max-width: 100%; } }
-      header nav.nav-bar a:hover {
-        color: #fgfgfg; }
+    header nav.nav-bar:hover {
+      color: #fgfgfg; }
   header h1 {
     text-align: center;
     font-size: 92px;
@@ -456,141 +457,130 @@ header {
       margin-right: 5px;
       border-radius: 50%; }
 
-.projects-section {
-  position: relative;
-  display: block;
-  background-color: #f4dec7;
-  height: 800px;
+.projects-wrapper {
+  background-color: pink;
   overflow: hidden; }
-  @media screen and (max-width: 950px) {
-    .projects-section {
-      height: 1200px;
-      position: relative;
-      overflow: hidden; } }
-  @media screen and (max-width: 690px) {
-    .projects-section {
-      background-color: #f4dec7;
-      height: 2700px;
-      position: relative; } }
-  .projects-section .projects-header {
+  .projects-wrapper .projects-header {
     margin-top: 0px; }
-  .projects-section .thumb-container {
-    max-width: 1300px;
-    position: relative;
-    margin: 0 auto 0 auto;
-    padding: 0 30px 0px 30px;
-    justify-content: center; }
-    @media screen and (max-width: 950px) {
-      .projects-section .thumb-container {
-        padding-bottom: 50px; } }
-    @media screen and (max-width: 690px) {
-      .projects-section .thumb-container {
-        padding-bottom: 50px;
-        position: relative; } }
-    .projects-section .thumb-container .thumb {
-      display: block;
-      width: 25%;
-      float: left;
+  .projects-wrapper .projects-slider {
+    width: 200%; }
+    .projects-wrapper .projects-slider .thumb-container {
+      max-width: 1300px;
       position: relative;
-      padding-top: 15%;
-      overflow: hidden;
-      background-image: url(../img/projects/thumbs/.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      /*====== Project Thumbs ====== */ }
+      margin: 0 auto 0 auto;
+      padding: 0 30px 0px 30px;
+      justify-content: center; }
       @media screen and (max-width: 950px) {
-        .projects-section .thumb-container .thumb {
-          width: 50%;
-          padding-top: 25%; } }
+        .projects-wrapper .projects-slider .thumb-container {
+          padding-bottom: 50px; } }
       @media screen and (max-width: 690px) {
-        .projects-section .thumb-container .thumb {
-          width: 100%;
-          padding-top: 50%; } }
-      .projects-section .thumb-container .thumb .thumb-overlay {
-        position: absolute;
-        top: 100%;
-        right: 0px;
-        left: 0px;
-        height: 100%;
-        background: rgba(207, 99, 87, 0.8);
-        text-align: center;
-        justify-content: center;
-        -webkit-transition: all 0.15s ease-out 0s;
-        -moz-transition: all 0.15s ease-out 0s;
-        transition: all 0.15s ease-out 0s;
-        display: -webkit-box;
-        display: -moz-box;
-        display: box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -moz-box-align: center;
-        box-align: center;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        -o-align-items: center;
-        align-items: center;
-        -ms-flex-align: center; }
-        .projects-section .thumb-container .thumb .thumb-overlay strong {
-          display: block;
-          position: relative;
-          color: #fff;
-          line-height: 1.5em; }
-      .projects-section .thumb-container .thumb:hover .thumb-overlay {
-        position: absolute;
-        top: 0%;
-        right: 0px;
-        left: 0px;
-        height: 100%; }
-    .projects-section .thumb-container .thumb-moobli {
-      background-image: url(../img/projects/thumbs/moobli2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-ribe {
-      background-image: url(../img/projects/thumbs/ribe2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-jupiter {
-      background-image: url(../img/projects/thumbs/jupiter2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-zeigende {
-      background-image: url(../img/projects/thumbs/zeigende2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-nauka {
-      background-image: url(../img/projects/thumbs/nauka2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-liverpool {
-      background-image: url(../img/projects/thumbs/liverpool2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-zeigende {
-      background-image: url(../img/projects/thumbs/zeigende2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-album {
-      background-image: url(../img/projects/thumbs/album2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-    .projects-section .thumb-container .thumb-snowcat {
-      background-image: url(../img/projects/thumbs/snowcat2.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
+        .projects-wrapper .projects-slider .thumb-container {
+          padding-bottom: 50px;
+          position: relative; } }
+      .projects-wrapper .projects-slider .thumb-container .thumb {
+        display: block;
+        width: 25%;
+        float: left;
+        position: relative;
+        padding-top: 15%;
+        overflow: hidden;
+        background-image: url(../img/projects/thumbs/.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        /*====== Project Thumbs ====== */ }
+        @media screen and (max-width: 950px) {
+          .projects-wrapper .projects-slider .thumb-container .thumb {
+            width: 50%;
+            padding-top: 25%; } }
+        @media screen and (max-width: 690px) {
+          .projects-wrapper .projects-slider .thumb-container .thumb {
+            width: 100%;
+            padding-top: 50%; } }
+        .projects-wrapper .projects-slider .thumb-container .thumb .thumb-overlay {
+          position: absolute;
+          top: 100%;
+          right: 0px;
+          left: 0px;
+          height: 100%;
+          background: rgba(207, 99, 87, 0.8);
+          text-align: center;
+          justify-content: center;
+          -webkit-transition: 600ms;
+          -moz-transition: 600ms;
+          transition: 600ms;
+          display: -webkit-box;
+          display: -moz-box;
+          display: box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -moz-box-align: center;
+          box-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          -ms-align-items: center;
+          -o-align-items: center;
+          align-items: center;
+          -ms-flex-align: center; }
+          .projects-wrapper .projects-slider .thumb-container .thumb .thumb-overlay strong {
+            display: block;
+            position: relative;
+            color: #fff;
+            line-height: 1.5em; }
+        .projects-wrapper .projects-slider .thumb-container .thumb:hover .thumb-overlay {
+          position: absolute;
+          top: 0%;
+          right: 0px;
+          left: 0px;
+          height: 100%; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-moobli {
+        background-image: url(../img/projects/thumbs/moobli2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-ribe {
+        background-image: url(../img/projects/thumbs/ribe2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-jupiter {
+        background-image: url(../img/projects/thumbs/jupiter2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-zeigende {
+        background-image: url(../img/projects/thumbs/zeigende2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-nauka {
+        background-image: url(../img/projects/thumbs/nauka2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-liverpool {
+        background-image: url(../img/projects/thumbs/liverpool2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-zeigende {
+        background-image: url(../img/projects/thumbs/zeigende2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-album {
+        background-image: url(../img/projects/thumbs/album2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
+      .projects-wrapper .projects-slider .thumb-container .thumb-snowcat {
+        background-image: url(../img/projects/thumbs/snowcat2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
 
 footer {
   height: 160px;
@@ -636,12 +626,11 @@ footer {
       footer .lockup .content-wrap a {
         color: rgba(0, 0, 0, 0.5);
         display: inline-block;
-        padding-right: 30px; }
+        padding: 40px 30px 0 30px; }
         @media screen and (max-width: 690px) {
           footer .lockup .content-wrap a {
             display: inline-block;
-            padding-right: 10px;
-            padding-left: 10px;
+            padding: 0 10px;
             margin: 0; } }
         footer .lockup .content-wrap a:hover {
           color: rgba(0, 0, 0, 0.7); }
