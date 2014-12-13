@@ -1,3 +1,7 @@
+
+
+// This is the Projects slider function
+
 $(function() {
 	smoothScroll(300);
 	projectsSlider(); // when the page loads the 'projectsSlider' function will run
@@ -23,9 +27,12 @@ function projectsSlider() {
 
 	$('.thumb').click(function() {
 		$('.projects-slider').css('left','-100%');
+		$('.projects-container').show();
 	});
 
 	$('.return').click(function() {
 		$('.projects-slider').css('left','0%');
+		$('.projects-container').hide();
 	});
 }
+
