@@ -237,26 +237,32 @@ h3 {
   h3 {
     padding: 50px 0 50px; } }
 h3, header nav.nav-bar a, footer .lockup .content-wrap a {
-  font-size: 12pt;
+  font-size: 11pt;
   font-weight: 700;
+  font-letter-spacing: 0.02em;
   text-transform: uppercase; }
 
-.projects-wrapper .projects-slider .thumb-container .thumb .thumb-overlay strong {
-  font-size: 14pt;
-  font-weight: 600;
+.projects-section .thumb-wrap .thumb .thumb-overlay strong, .projects-section .projects-wrap .thumb .thumb-overlay strong, .projects-section .projects-container h4 {
+  font-size: 18pt;
+  font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.22em; }
+  letter-spacing: 0.18em; }
 
-.about-me, .projects-wrapper .projects-header {
+section .about-me, .projects-section .projects-header {
   font-size: 15pt;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.02em; }
 
-.skill-lockup .skill-icons span {
+section .skill-lockup .skill-label {
+  letter-spacing: 0.1em;
+  font-size: 14pt;
+  font-weight: 600; }
+
+section .skill-lockup .skill-icons span {
   background: #cf6357; }
 
-.skill-lockup .skill-icons.skill-1 span:nth-child(n+2), .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
+section .skill-lockup .skill-icons.skill-1 span:nth-child(n+2), section .skill-lockup .skill-icons.skill-2 span:nth-child(n+3), section .skill-lockup .skill-icons.skill-3 span:nth-child(n+4), section .skill-lockup .skill-icons.skill-4 span:nth-child(n+5), section .skill-lockup .skill-icons.skill-5 span:nth-child(n+6), section .skill-lockup .skill-icons.skill-6 span:nth-child(n+7), section .skill-lockup .skill-icons.skill-7 span:nth-child(n+8), section .skill-lockup .skill-icons.skill-8 span:nth-child(n+9), section .skill-lockup .skill-icons.skill-9 span:nth-child(n+10), section .skill-lockup .skill-icons.skill-10 span:nth-child(n+11) {
   background: #cf6357;
   opacity: 0.3; }
 
@@ -274,7 +280,8 @@ header {
   background-size: cover; }
   header .logo {
     margin: 0;
-    padding: 30px; }
+    padding: 30px;
+    opacity: 0.2; }
     @media screen and (max-width: 690px) {
       header .logo {
         padding: 30px;
@@ -298,8 +305,8 @@ header {
         clear: both; } }
     header nav.nav-bar a {
       display: inline-block;
-      padding-rigt: 10px;
-      padding-left: 10px;
+      padding-rigt: 20px;
+      padding-left: 20px;
       color: rgba(0, 0, 0, 0.4); }
       @media screen and (max-width: 690px) {
         header nav.nav-bar a {
@@ -314,18 +321,18 @@ header {
   header h1 {
     text-align: center;
     font-size: 92px;
-    font-weight: 300;
+    font-weight: 600;
     color: white;
     line-height: 1.1em;
     padding: 120px 20px 30px 20px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.012em;
     clear: both;
     margin: 0 auto 0 auto; }
     @media screen and (max-width: 690px) {
       header h1 {
         padding: 210px 20px 20px 20px;
         font-size: 55px;
-        font-weight: 300;
+        font-weight: 600;
         min-width: 20%; } }
   header .kicker {
     text-align: center;
@@ -338,267 +345,276 @@ header {
       header .kicker {
         font-size: 12pt; } }
 
-.face-lockup {
-  max-width: 745px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding: 0 40px;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  box-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify; }
-  .face-lockup .face-img {
-    height: 185px;
-    width: 185px;
-    order: 3;
-    border-radius: 50%;
-    background-position: center center;
-    background-repeat: no-repeat; }
-    .face-lockup .face-img:hover {
-      -webkit-transition: all 0.15s ease-out 0s;
-      -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s;
+section {
+  /* a media query so that the elements wont overlap, but regroup */ }
+  section .face-lockup {
+    max-width: 745px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 40px;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
+    section .face-lockup .face-img {
+      height: 185px;
+      width: 185px;
+      order: 3;
+      border-radius: 50%;
+      background-position: center center;
+      background-repeat: no-repeat; }
+      section .face-lockup .face-img:hover {
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        height: 100px;
+        width: 100px;
+        background-color: rgba(29, 29, 43, 0.5); }
+    section .face-lockup [class^="icon-"] {
       height: 100px;
       width: 100px;
-      background-color: rgba(29, 29, 43, 0.5); }
-  .face-lockup [class^="icon-"] {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%; }
-    .face-lockup [class^="icon-"] path {
-      fill: #cf6357; }
-    .face-lockup [class^="icon-"] polygon {
-      fill: #cf6357; }
-    .face-lockup [class^="icon-"].icon-me {
-      order: 1; }
-    .face-lockup [class^="icon-"].icon-projects {
-      order: 2; }
-    .face-lockup [class^="icon-"].icon-clients {
-      order: 4; }
-    .face-lockup [class^="icon-"].icon-contact {
-      order: 5; }
-
-/* a media query so that the elements wont overlap, but regroup */
-@media screen and (max-width: 690px) {
-  .face-lockup {
-    display: block;
-    text-align: center;
-    padding: 0 40px; }
-    .face-lockup div {
-      display: inline-block; }
-    .face-lockup .face-img {
+      border-radius: 50%; }
+      section .face-lockup [class^="icon-"] path {
+        fill: #cf6357; }
+      section .face-lockup [class^="icon-"] polygon {
+        fill: #cf6357; }
+      section .face-lockup [class^="icon-"].icon-me {
+        order: 1; }
+      section .face-lockup [class^="icon-"].icon-projects {
+        order: 2; }
+      section .face-lockup [class^="icon-"].icon-clients {
+        order: 4; }
+      section .face-lockup [class^="icon-"].icon-contact {
+        order: 5; }
+  @media screen and (max-width: 690px) {
+    section .face-lockup {
       display: block;
-      background-position: center center;
-      background-repeat: no-repeat;
-      width: auto;
-      height: 180px;
-      width: 180px;
-      margin: 0 auto 40px auto;
-      border-radius: 50%; }
-    .face-lockup [class^="icon-"] {
-      margin: 10px;
-      padding: 5px; } }
-.about-text {
-  max-width: 750px;
-  padding: 0 40px;
-  /* put at least 10 px padding so that the text does not touch the sides of the phone */
-  margin: 60px auto;
-  text-align: justify;
-  letter-spacing: 0.06em;
-  font-size: 14pt;
-  font-weight: 300;
-  line-height: 1.5em;
-  color: #534741; }
-
-.skill-lockup {
-  max-width: 600px;
-  margin: 120px auto;
-  padding: 0 40px; }
-  .skill-lockup:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .skill-lockup .skill-label {
-    color: #534741;
-    letter-spacing: 0.2em;
-    font-size: 14pt;
-    font-weight: 700;
-    text-transform: uppercase; }
-  .skill-lockup .skill-unit {
-    width: 300px;
-    float: left; }
-  .skill-lockup .skill-icons {
-    font-size: 0;
-    margin: 0 0 30px; }
-    .skill-lockup .skill-icons span {
-      display: inline-block;
-      height: 14px;
-      width: 14px;
-      margin-right: 5px;
-      border-radius: 50%; }
-
-.projects-wrapper {
-  background-color: pink;
-  overflow: hidden; }
-  .projects-wrapper .projects-header {
-    margin-top: 0px; }
-  .projects-wrapper .projects-slider {
-    width: 200%; }
-    .projects-wrapper .projects-slider .thumb-container {
-      max-width: 1300px;
-      position: relative;
-      margin: 0 auto 0 auto;
-      padding: 0 30px 0px 30px;
-      justify-content: center; }
-      @media screen and (max-width: 950px) {
-        .projects-wrapper .projects-slider .thumb-container {
-          padding-bottom: 50px; } }
-      @media screen and (max-width: 690px) {
-        .projects-wrapper .projects-slider .thumb-container {
-          padding-bottom: 50px;
-          position: relative; } }
-      .projects-wrapper .projects-slider .thumb-container .thumb {
+      text-align: center;
+      padding: 0 40px; }
+      section .face-lockup div {
+        display: inline-block; }
+      section .face-lockup .face-img {
         display: block;
-        width: 25%;
-        float: left;
-        position: relative;
-        padding-top: 15%;
-        overflow: hidden;
-        background-image: url(../img/projects/thumbs/.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
         background-position: center center;
-        /*====== Project Thumbs ====== */ }
-        @media screen and (max-width: 950px) {
-          .projects-wrapper .projects-slider .thumb-container .thumb {
-            width: 50%;
-            padding-top: 25%; } }
-        @media screen and (max-width: 690px) {
-          .projects-wrapper .projects-slider .thumb-container .thumb {
-            width: 100%;
-            padding-top: 50%; } }
-        .projects-wrapper .projects-slider .thumb-container .thumb .thumb-overlay {
-          position: absolute;
-          top: 100%;
-          right: 0px;
-          left: 0px;
-          height: 100%;
-          background: rgba(207, 99, 87, 0.8);
-          text-align: center;
-          justify-content: center;
-          -webkit-transition: 600ms;
-          -moz-transition: 600ms;
-          transition: 600ms;
-          display: -webkit-box;
-          display: -moz-box;
-          display: box;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -moz-box-align: center;
-          box-align: center;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          -ms-align-items: center;
-          -o-align-items: center;
-          align-items: center;
-          -ms-flex-align: center; }
-          .projects-wrapper .projects-slider .thumb-container .thumb .thumb-overlay strong {
-            display: block;
-            position: relative;
-            color: #fff;
-            line-height: 1.5em; }
-        .projects-wrapper .projects-slider .thumb-container .thumb:hover .thumb-overlay {
+        background-repeat: no-repeat;
+        width: auto;
+        height: 180px;
+        width: 180px;
+        margin: 0 auto 40px auto;
+        border-radius: 50%; }
+      section .face-lockup [class^="icon-"] {
+        margin: 10px;
+        padding: 5px; } }
+  section .about-text {
+    max-width: 750px;
+    padding: 0 40px;
+    /* put at least 10 px padding so that the text does not touch the sides of the phone */
+    margin: 60px auto;
+    text-align: justify;
+    letter-spacing: 0.06em;
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #534741; }
+  section .skill-lockup {
+    max-width: 600px;
+    margin: 120px auto;
+    padding: 0 40px; }
+    section .skill-lockup:after {
+      content: "";
+      display: table;
+      clear: both; }
+    section .skill-lockup .skill-label {
+      color: #534741; }
+    section .skill-lockup .skill-unit {
+      width: 300px;
+      float: left; }
+    section .skill-lockup .skill-icons {
+      font-size: 0;
+      margin: 0 0 30px; }
+      section .skill-lockup .skill-icons span {
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        margin-right: 5px;
+        border-radius: 50%; }
+
+.projects-section {
+  overflow: hidden;
+  padding-bottom: 250px; }
+  .projects-section .projects-header {
+    margin-top: 0px; }
+  .projects-section .projects-slider {
+    width: 200%;
+    position: relative;
+    left: 0%;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s; }
+  .projects-section .thumb-wrap, .projects-section .projects-wrap {
+    width: 50%;
+    float: left; }
+    .projects-section .thumb-wrap .thumb, .projects-section .projects-wrap .thumb {
+      display: block;
+      width: 25%;
+      float: left;
+      position: relative;
+      padding-top: 15%;
+      overflow: hidden;
+      cursor: pointer;
+      /*====== Project Thumbs ====== */ }
+      @media screen and (max-width: 960px) {
+        .projects-section .thumb-wrap .thumb, .projects-section .projects-wrap .thumb {
+          width: 50%;
+          padding-top: 25%; } }
+      @media screen and (max-width: 690px) {
+        .projects-section .thumb-wrap .thumb, .projects-section .projects-wrap .thumb {
+          width: 100%;
+          padding-top: 50%; } }
+      .projects-section .thumb-wrap .thumb .thumb-overlay, .projects-section .projects-wrap .thumb .thumb-overlay {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        background: rgba(207, 99, 87, 0.8);
+        text-align: center;
+        justify-content: center;
+        -webkit-transition: 600ms;
+        -moz-transition: 600ms;
+        transition: 600ms;
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center; }
+        .projects-section .thumb-wrap .thumb .thumb-overlay strong, .projects-section .projects-wrap .thumb .thumb-overlay strong {
+          display: block;
+          position: relative;
+          color: #fff;
+          line-height: 1.5em; }
+      .projects-section .thumb-wrap .thumb:hover, .projects-section .projects-wrap .thumb:hover {
+        z-index: 2; }
+        .projects-section .thumb-wrap .thumb:hover .thumb-overlay, .projects-section .projects-wrap .thumb:hover .thumb-overlay {
           position: absolute;
           top: 0%;
           right: 0px;
           left: 0px;
           height: 100%; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-moobli {
-        background-image: url(../img/projects/thumbs/moobli2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-ribe {
-        background-image: url(../img/projects/thumbs/ribe2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-jupiter {
-        background-image: url(../img/projects/thumbs/jupiter2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-zeigende {
-        background-image: url(../img/projects/thumbs/zeigende2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-nauka {
-        background-image: url(../img/projects/thumbs/nauka2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-liverpool {
-        background-image: url(../img/projects/thumbs/liverpool2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-zeigende {
-        background-image: url(../img/projects/thumbs/zeigende2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-album {
-        background-image: url(../img/projects/thumbs/album2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
-      .projects-wrapper .projects-slider .thumb-container .thumb-snowcat {
-        background-image: url(../img/projects/thumbs/snowcat2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center; }
+    .projects-section .thumb-wrap .thumb-moobli, .projects-section .projects-wrap .thumb-moobli {
+      background-image: url(../img/projects/thumbs/moobli2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-wrap .thumb-ribe, .projects-section .projects-wrap .thumb-ribe {
+      background-image: url(../img/projects/thumbs/ribe2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-wrap .thumb-jupiter, .projects-section .projects-wrap .thumb-jupiter {
+      background-image: url(../img/projects/thumbs/jupiter2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-wrap .thumb-zeigende, .projects-section .projects-wrap .thumb-zeigende {
+      background-image: url(../img/projects/thumbs/zeigende2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-wrap .thumb-nauka, .projects-section .projects-wrap .thumb-nauka {
+      background-image: url(../img/projects/thumbs/nauka2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-wrap .thumb-liverpool, .projects-section .projects-wrap .thumb-liverpool {
+      background-image: url(../img/projects/thumbs/liverpool2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-wrap .thumb-album, .projects-section .projects-wrap .thumb-album {
+      background-image: url(../img/projects/thumbs/album2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+    .projects-section .thumb-wrap .thumb-snowcat, .projects-section .projects-wrap .thumb-snowcat {
+      background-image: url(../img/projects/thumbs/snowcat2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+      .projects-section .thumb-wrap .thumb-snowcat .h2, .projects-section .projects-wrap .thumb-snowcat .h2 {
+        color: blue;
+        font-weight: 700;
+        font-size: 60px;
+        display: block; }
+  .projects-section .projects-container {
+    max-width: 750px;
+    margin: 0px auto; }
+    .projects-section .projects-container img {
+      max-width: 100%;
+      margin-bottom: 20px; }
+    .projects-section .projects-container .return {
+      height: 50px;
+      width: 50px;
+      position: relative;
+      bottom: 8px;
+      cursor: pointer;
+      opacity: 0.5;
+      float: right;
+      path-fill: rgba(0, 0, 0, 0.1); }
+      .projects-section .projects-container .return:hover {
+        opacity: 1; }
 
 footer {
-  height: 160px;
-  margin-bottom: 0px;
+  height: 150px;
+  margin-top: -150px;
+  bottom: 0;
   background: url(../img/108H.jpg) center center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
-  position: relative;
-  /* @media screen and (max-width: 690px)
-   * margin-bottom: 0px
-   * position: relative */ }
+  position: sticky;
+  width: 100%; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
   footer .lockup {
     position: relative; }
     footer .lockup .logo {
       padding: 30px;
       display: block;
       margin: 0;
-      opacity: 0.4; }
+      opacity: 0.2; }
       @media screen and (max-width: 690px) {
         footer .lockup .logo {
           float: none;
@@ -616,9 +632,6 @@ footer {
           margin: 0 auto;
           text-align: center;
           display: block; } }
-      footer .lockup .content-wrap .footer-nav {
-        /* @media screen and (max-width: 690px)
-         * margin: 0  */ }
       footer .lockup .content-wrap .copyright {
         text-transform: uppercase;
         font-size: 12px;

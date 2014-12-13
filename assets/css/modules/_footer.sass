@@ -1,15 +1,13 @@
 footer
-  height: 160px
-  margin-bottom: 0px
+  height: 150px
+  margin-top: -150px
+  bottom: 0
   background: url(../img/108H.jpg) center center
   background-repeat: no-repeat, no-repeat
   background-size: cover
-  position: relative
-
-
-  /* @media screen and (max-width: 690px)
-    margin-bottom: 0px
-    position: relative */
+  position: sticky
+  width: 100%
+  +clearfix
 
 
   .lockup
@@ -21,7 +19,7 @@ footer
       padding: 30px
       display: block
       margin: 0
-      opacity: .4
+      opacity: .2
 
       @media screen and (max-width: 690px)
         float: none
@@ -36,20 +34,13 @@ footer
     .content-wrap
       float: right
 
+
       @media screen and (max-width: 690px)
         float: none
         justify-content: center
         margin: 0 auto
         text-align: center
         display: block
-
-
-      .footer-nav
-
-
-        /* @media screen and (max-width: 690px)
-          margin: 0  */
-
 
 
       .copyright
@@ -65,7 +56,6 @@ footer
 
         @media screen and (max-width: 690px)
           display: inline-block
-
           padding: 0 10px
           margin: 0
 

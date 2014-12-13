@@ -1,132 +1,134 @@
-
-.face-lockup
-  max-width: 745px
-  +display(flex)
-  // bourbon mixin, which turns your object into a flex box to easily arrange elements
-  margin: 0 auto
-  padding: 0 40px
-  +align-items(center)
-  // this will align the items inside the block horizontally
-  +justify-content(space-between)
-  // this will distribute the items iinside evenly across the block space in width
-
-  .face-img
-    +size(185px)
-    order: 3
-    border-radius: 50%
-    background:
-      position: center center
-      repeat: no-repeat
-
-    &:hover
-      +transition
-      +size(100px)
-      background-color: rgba(29, 29, 43, .5)
+section
 
 
+  .about-me
+    @extend %h1-bold
 
-
-  [class^="icon-"]
-    +size(100px)
-    // background-color: $bgcolor
-    border-radius: 50%
-    // "[class^="icon-"]" is a cool selector, which basically says, select a class, as long as (^) it includes this element (icon-);'border-radius: 50%' turns a square into a circle
-
-    path
-      fill: $accent-red
-
-    polygon
-      fill: $accent-red
-
-    &.icon-me
-      order: 1
-    &.icon-projects
-      order: 2
-    &.icon-clients
-      order: 4
-    &.icon-contact
-      order: 5
-
-
-
-/* a media query so that the elements wont overlap, but regroup */
-@media screen and (max-width: 690px)
   .face-lockup
-    display: block
-    // upon reaching 650 px in width the elements will reform vertically under each other
-    text-align: center
+    max-width: 745px
+    +display(flex)
+    // bourbon mixin, which turns your object into a flex box to easily arrange elements
+    margin: 0 auto
     padding: 0 40px
+    +align-items(center)
+    // this will align the items inside the block horizontally
+    +justify-content(space-between)
+    // this will distribute the items iinside evenly across the block space in width
 
-    div
-      display: inline-block
 
     .face-img
-      display: block
-      background-position: center center
-      background-repeat: no-repeat
-      width: auto
-      +size(180px)
-      margin: 0 auto 40px auto
+      +size(185px)
+      order: 3
       border-radius: 50%
+      background:
+        position: center center
+        repeat: no-repeat
+
+      &:hover
+        +transition
+        +size(100px)
+        background-color: rgba(29, 29, 43, .5)
+
+
+
 
     [class^="icon-"]
-      margin: 10px
-      padding: 5px
-
-
-.about-me
-  @extend %h1-bold
-
-
-
-.about-text
-  max-width: 750px
-  padding: 0 40px
-  /* put at least 10 px padding so that the text does not touch the sides of the phone */
-  margin: 60px auto
-  text-align: justify
-  letter-spacing: 0.06em
-  font-size: 14pt
-  font-weight: 300
-  line-height: 1.5em
-  color: $accent-dark
-
-
-
-.skill-lockup
-  max-width: 600px
-  margin: 120px auto
-  padding: 0 40px
-  +clearfix
-
-  .skill-label
-    color: $accent-dark
-    letter-spacing: 0.2em
-    font-size: 14pt
-    font-weight: 700
-    text-transform: uppercase
-
-  .skill-unit
-    width: 300px
-    float: left
-
-  .skill-icons
-    font-size: 0
-    margin: 0 0 30px
-
-    span
-      display: inline-block
-      +size(14px)
-      @extend %skill-color
-      margin-right: 5px
+      +size(100px)
+      // background-color: $bgcolor
       border-radius: 50%
+      // "[class^="icon-"]" is a cool selector, which basically says, select a class, as long as (^) it includes this element (icon-);'border-radius: 50%' turns a square into a circle
+
+      path
+        fill: $accent-red
+
+      polygon
+        fill: $accent-red
+
+      &.icon-me
+        order: 1
+      &.icon-projects
+        order: 2
+      &.icon-clients
+        order: 4
+      &.icon-contact
+        order: 5
 
 
-    @for $i from 1 through 10
-      &.skill-#{$i} span:nth-child(n+#{$i+1})
-        @extend %skill-color-op
 
-        // go to sass-lang.com to get this 'for' loop. What this does is it creates a new selector everytime we run it. The first line says: "It starts with 1 and follows through 10, and everytime it goes through the loop, the placeholder(i) will be replaced with a number of 1 through 10". Th second line says: On the first iteration it will output 1, and its child will be n+1. So the first iteration will be skill-1.
+  /* a media query so that the elements wont overlap, but regroup */
+  @media screen and (max-width: 690px)
+    .face-lockup
+      display: block
+      // upon reaching 650 px in width the elements will reform vertically under each other
+      text-align: center
+      padding: 0 40px
+
+      div
+        display: inline-block
+
+      .face-img
+        display: block
+        background-position: center center
+        background-repeat: no-repeat
+        width: auto
+        +size(180px)
+        margin: 0 auto 40px auto
+        border-radius: 50%
+
+      [class^="icon-"]
+        margin: 10px
+        padding: 5px
+
+
+
+
+
+  .about-text
+    max-width: 750px
+    padding: 0 40px
+    /* put at least 10 px padding so that the text does not touch the sides of the phone */
+    margin: 60px auto
+    text-align: justify
+    letter-spacing: 0.06em
+    font-size: 14pt
+    font-weight: 300
+    line-height: 1.5em
+    color: $accent-dark
+
+
+
+  .skill-lockup
+    max-width: 600px
+    margin: 120px auto
+    padding: 0 40px
+    +clearfix
+
+    .skill-label
+      color: $accent-dark
+      @extend %skills
+
+
+    .skill-unit
+      width: 300px
+      float: left
+
+    .skill-icons
+      font-size: 0
+      margin: 0 0 30px
+
+      span
+        display: inline-block
+        +size(14px)
+        @extend %skill-color
+        margin-right: 5px
+        border-radius: 50%
+
+
+      @for $i from 1 through 10
+        &.skill-#{$i} span:nth-child(n+#{$i+1})
+          @extend %skill-color-op
+
+          // go to sass-lang.com to get this 'for' loop. What this does is it creates a new selector everytime we run it. The first line says: "It starts with 1 and follows through 10, and everytime it goes through the loop, the placeholder(i) will be replaced with a number of 1 through 10". Th second line says: On the first iteration it will output 1, and its child will be n+1. So the first iteration will be skill-1.
 
 
 
