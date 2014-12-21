@@ -10,7 +10,13 @@ function slide(x) {
 }
 
 
-
+window.setInterval(function slideA() {
+	var Image = document.getElementById('img');
+	imgCount = imgCount + 1;
+	if(imgCount > total){ imgCount = 1; }
+	if(imgCount < 1){ imgCount = total; }
+	Image.src = "../assets/img/projects/proj" + imgCount + ".jpg";
+}, 5000);
 
 
 

@@ -480,10 +480,16 @@ section {
 
 .projects-section {
   overflow: hidden;
-  padding-bottom: 300px;
+  margin-bottom: 300px;
   background-color: rgba(220, 220, 220, 0.5);
   position: relative;
   height: 1200px; }
+  @media screen and (max-width: 960px) {
+    .projects-section {
+      height: 960px; } }
+  @media screen and (max-width: 690px) {
+    .projects-section {
+      height: 690px; } }
   .projects-section #proj-container {
     height: 800px;
     width: 960px;
@@ -491,6 +497,14 @@ section {
     background-color: lightgrey;
     position: relative;
     overflow: hidden; }
+    @media screen and (max-width: 960px) {
+      .projects-section #proj-container {
+        width: 690px;
+        height: 828px; } }
+    @media screen and (max-width: 690px) {
+      .projects-section #proj-container {
+        width: 450px;
+        height: 540px; } }
     .projects-section #proj-container .left_side {
       height: 800px;
       width: 100px;
@@ -508,6 +522,12 @@ section {
         cursor: pointer; }
         .projects-section #proj-container .left_side .prev:hover {
           opacity: 1; }
+        @media screen and (max-width: 960px) {
+          .projects-section #proj-container .left_side .prev {
+            margin: 260px 25px 260px 15px; } }
+        @media screen and (max-width: 690px) {
+          .projects-section #proj-container .left_side .prev {
+            margin: 160px 30px 160px 10px; } }
     .projects-section #proj-container .right_side {
       height: 800px;
       width: 100px;
@@ -515,6 +535,14 @@ section {
       right: 0px;
       z-index: 99;
       top: 0px; }
+      @media screen and (max-width: 960px) {
+        .projects-section #proj-container .right_side {
+          width: 100px;
+          height: 828px; } }
+      @media screen and (max-width: 690px) {
+        .projects-section #proj-container .right_side {
+          width: 100px;
+          height: 540px; } }
       .projects-section #proj-container .right_side .next {
         width: 60px;
         height: 60px;
@@ -525,6 +553,12 @@ section {
         cursor: pointer; }
         .projects-section #proj-container .right_side .next:hover {
           opacity: 1; }
+        @media screen and (max-width: 960px) {
+          .projects-section #proj-container .right_side .next {
+            margin: 260px 15px 260px 25px; } }
+        @media screen and (max-width: 690px) {
+          .projects-section #proj-container .right_side .next {
+            margin: 160px 10px 160px 30px; } }
     .projects-section #proj-container #img {
       width: 100%;
       position: absolute; }
