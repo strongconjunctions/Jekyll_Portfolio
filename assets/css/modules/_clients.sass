@@ -1,0 +1,181 @@
+.clients-section
+  position: relative
+  margin: 0 auto 200px auto
+
+  #carousel-controls
+    +position(relative)
+    width: 100%
+    height: 80px
+    display: block
+
+
+    #next
+      +size(80px)
+      position: absolute
+      float: right
+      right: 30px
+
+      &:hover
+        cursor: pointer
+
+
+    #prev
+      +size(80px)
+      position: absolute
+      left: 10px
+      float: left
+
+      &:hover
+        cursor: pointer
+
+
+  .clients-carousel
+    width: 100%
+    position: relative
+    margin: 0 auto
+
+    .cl-section
+      max-width: 750px
+      margin: 0 auto
+      position: relative
+      display: none
+      transition: 2s ease-in
+
+      &.active-section
+        +display(flex)
+
+
+
+      .cl-testimonials
+        position: relative
+
+        h3.name
+          border: 3px solid $accent-red
+          max-width: 150px
+          padding: 5px 3px
+          position: relative
+          margin: 20px auto 60px auto
+          @extend %label-semibold
+          color: $accent-red
+          transition: 0.6s ease-in
+
+        p
+          max-width: 750px
+          padding: 0 20px 0px 20px
+          margin: 0 auto
+          text-align: justify
+          letter-spacing: 0.045em
+          font-size: 14pt
+          font-weight: 300
+          line-height: 1.5em
+          color: $accent-dark
+
+
+
+  .client-logos
+    position: relative
+    max-width: 850px
+    margin: 100px auto 100px
+    +display(flex)
+    +align-items(flex-end)
+    +justify-content(space-around)
+
+
+    .cl-logo
+      height: 80px
+      min-width: 200px
+      background:
+        size: contain
+        position: center
+        repeat: no-repeat
+      cursor: pointer
+      opacity: 0.5
+
+      &.active-section
+        box-shadow: 0px 10px 0px #fff, 0px 13px 0px $accent-red
+        opacity: 1
+
+
+// MOBILE VERSION CONTROLS
+
+.cl-mob-nav
+  text-align: center
+  display: none
+
+  span
+    cursor: pointer
+    display: inline-block
+    +size(14px)
+    border-radius: 50%
+    border: solid 2px $accent-red
+    opacity: 0.5
+    margin: 0px 10px 30px 10px
+
+    &.active-section
+      opacity: 1
+
+
+
+
+// MEDIA QUERY
+
+@media (max-width: 790px)
+
+  .cl-logo
+    display: none
+
+  .cl-mob-nav
+    text-align: center
+    display: block
+
+  .clients-carousel
+
+    .cl-section
+      display: block
+      position: relative
+      margin-left: 0px
+      left: auto
+
+      .cl-testimonials
+        padding: 0px 10px
+        max-width: 600px
+        margin: 0px auto
+
+
+  .clients-section
+
+    #carousel-controls
+      display: none
+      width: 0px
+      height: 0px
+
+
+
+
+
+
+
+/*         .quotes
+          +position(absolute, -50px null null 40px)
+          opacity: 0.3
+
+          path
+            fill: $accent-red */
+
+
+/*   .client-logos
+    position: relative
+    max-width: 850px
+    margin: 350px auto 100px
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-around)
+
+
+    .cl-logo
+      cursor: pointer
+      width: 100%
+      margin: 0 20px
+
+      &.active-section
+        box-shadow: 0px 10px 0px #fff, 0px 13px 0px $accent-red */

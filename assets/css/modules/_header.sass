@@ -42,7 +42,9 @@ header
       padding-left: 20px
       color: rgba(0,0,0,0.4)
       @extend %small-bold
-      // placeholders.sass has the full code
+
+      &:hover
+        color: $default-hover
 
 
       @media screen and (max-width: 690px)
@@ -53,8 +55,6 @@ header
         text-align: center
         max-width: 100%
 
-    &:hover
-      color: #fgfgfg
 
 
   h1

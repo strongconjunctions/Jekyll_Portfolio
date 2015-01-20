@@ -1,3 +1,5 @@
+// PROJECTS SECTION CODE
+
 var imgCount = 1;
 var total = 8;
 
@@ -16,7 +18,70 @@ window.setInterval(function slideA() {
 	if(imgCount > total){ imgCount = 1; }
 	if(imgCount < 1){ imgCount = total; }
 	Image.src = "../assets/img/projects/proj" + imgCount + ".jpg";
-}, 5000);
+}, 7000);
+
+
+
+
+
+// CLIENT SECTION CODE
+
+function clientRelated() {
+	$('.cl-section').first().addClass('active-section');
+	$('.cl-logo').first().addClass('active-section');
+	$('.cl-mob-nav span').first().addClass('active-section');
+
+	$('.cl-logo, .cl-mob-nav span').click(function() {
+		var $this = $(this),
+			$siblingss = $this.parent().children(),
+			position = $siblingss.index($this);
+
+		$('.cl-section').removeClass('active-section').eq(position).addClass('active-section');
+		$siblingss.removeClass('active-section');
+		$this.addClass('active-section');
+	});
+
+	$('#next, #prev').click(function() {
+
+		var $this = $(this),
+			activeClient = $('.clients-carousel').find('.active-section'),
+			position = $('.clients-carousel').children().index(activeClient),
+			clientNum = $('.cl-section').length;
+
+
+			if($this.hasClass('next1')) {
+
+				if(position < clientNum -1){
+					$('.active-section').removeClass('active-section').next().addClass('active-section');
+				} else {
+					$('.cl-section').removeClass('active-section').first().addClass('active-section');
+					$('.cl-logo').removeClass('active-section').first().addClass('active-section');
+				}
+			} else {
+
+				if (position === 0) {
+
+					$('.cl-section').removeClass('active-section').last().addClass('active-section');
+					$('.cl-logo').removeClass('active-section').last().addClass('active-section');
+
+				} else {
+
+				$('.active-section').removeClass('active-section').prev().addClass('active-section');
+				}
+			}
+	});
+}
+
+clientRelated();
+
+
+
+
+
+
+
+
+
 
 
 
