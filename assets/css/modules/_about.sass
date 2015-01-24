@@ -1,6 +1,5 @@
 section
 
-
   .about-me
 
 
@@ -9,11 +8,11 @@ section
     +display(flex)
     // bourbon mixin, which turns your object into a flex box to easily arrange elements
     margin: 0 auto
-    padding: 0 40px
+    padding: 0 40px 40px
     +align-items(center)
     // this will align the items inside the block horizontally
     +justify-content(space-between)
-    // this will distribute the items iinside evenly across the block space in width
+    // this will distribute the items inside evenly across the block space in width
 
 
     .face-img
@@ -33,11 +32,15 @@ section
       border-radius: 50%
       // "[class^="icon-"]" is a cool selector, which basically says, select a class, as long as (^) it includes this element (icon-);'border-radius: 50%' turns a square into a circle
 
+      opacity: .5
+      cursor: pointer
+      transition: 0.6s ease-out
+
       path
-        fill: $accent-red
+        fill: $main-red
 
       polygon
-        fill: $accent-red
+        fill: $main-red
 
       &.icon-me
         order: 1
@@ -48,13 +51,17 @@ section
       &.icon-contact
         order: 5
 
+      &:hover
+        opacity: 1
 
 
-  /* a media query so that the elements wont overlap, but regroup */
-  @media screen and (max-width: 690px)
+
+
+
+
+  @media (max-width: 690px)
     .face-lockup
       display: block
-      // upon reaching 650 px in width the elements will reform vertically under each other
       text-align: center
       padding: 0 40px
 
@@ -88,7 +95,7 @@ section
     font-size: 14pt
     font-weight: 300
     line-height: 1.5em
-    color: $accent-dark
+    color: $main-dark
 
 
 
@@ -99,7 +106,7 @@ section
     +clearfix
 
     .skill-label
-      color: $accent-dark
+      color: $main-dark
       @extend %skills
 
 

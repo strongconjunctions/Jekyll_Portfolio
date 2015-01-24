@@ -50,13 +50,13 @@
         position: relative
 
         h3.name
-          border: 3px solid $accent-red
+          border: 3px solid $main-red
           max-width: 150px
           padding: 5px 3px
           position: relative
           margin: 20px auto 60px auto
           @extend %label-semibold
-          color: $accent-red
+          color: $main-red
           transition: 0.6s ease-in
 
         p
@@ -68,7 +68,7 @@
           font-size: 14pt
           font-weight: 300
           line-height: 1.5em
-          color: $accent-dark
+          color: $main-dark
 
 
 
@@ -92,7 +92,7 @@
       opacity: 0.5
 
       &.active-section
-        box-shadow: 0px 10px 0px #fff, 0px 13px 0px $accent-red
+        box-shadow: 0px 10px 0px #fff, 0px 13px 0px $main-red
         opacity: 1
 
 
@@ -107,11 +107,14 @@
     display: inline-block
     +size(14px)
     border-radius: 50%
-    border: solid 2px $accent-red
+    border: solid 2px $main-red
     opacity: 0.5
     margin: 0px 10px 30px 10px
+    transition: 0.2s ease-out
+
 
     &.active-section
+      +transform(scale(1.2))
       opacity: 1
 
 
@@ -160,7 +163,7 @@
           opacity: 0.3
 
           path
-            fill: $accent-red */
+            fill: $main-red */
 
 
 /*   .client-logos
@@ -178,4 +181,4 @@
       margin: 0 20px
 
       &.active-section
-        box-shadow: 0px 10px 0px #fff, 0px 13px 0px $accent-red */
+        box-shadow: 0px 10px 0px #fff, 0px 13px 0px $main-red */
