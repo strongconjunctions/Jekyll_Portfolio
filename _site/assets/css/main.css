@@ -405,7 +405,7 @@ header .logo, footer .lockup .logo {
     fill: #fff; }
 
 header {
-  background: url(../img/109H.jpg) center center;
+  background: url(../img/bg/mountain7.jpg) center center;
   background-size: cover; }
   header .navigation {
     top: 0px;
@@ -441,12 +441,13 @@ header {
         color: #d89993; }
   header h1 {
     text-align: center;
-    font-size: 80px;
-    font-weight: 600;
+    font-size: 70px;
+    font-weight: 900;
     color: white;
     line-height: 1.1em;
     padding: 60px 20px 30px 20px;
     letter-spacing: 0.012em;
+    border-bottom: 3px solid #fff;
     clear: both;
     margin: 0 auto 0 auto; }
   header .kicker {
@@ -456,7 +457,7 @@ header {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.01em;
-    padding-bottom: 120px; }
+    padding: 30px 0px 100px 0px; }
 
 @media (max-width: 640px) {
   header .logo {
@@ -469,7 +470,7 @@ header {
     text-align: center;
     position: relative;
     display: block;
-    padding: 30px 0 0 0;
+    padding: 30px 40px 0;
     float: none;
     clear: both; }
     header nav.nav-bar a {
@@ -482,7 +483,6 @@ header {
   header h1 {
     padding: 100px 20px 20px 20px;
     font-size: 55px;
-    font-weight: 600;
     min-width: 20; }
   header .kicker {
     font-size: 12pt;
@@ -619,16 +619,16 @@ section .skill-lockup {
       position: relative;
       text-align: center; }
       .projects-section #proj-container .control-bars .left_side {
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         position: absolute;
         left: 0px;
         padding: 10px 0 0 10px;
         z-index: 99;
         top: 0px; }
         .projects-section #proj-container .control-bars .left_side .prev {
-          height: 80px;
-          width: 80px;
+          height: 60px;
+          width: 60px;
           background-color: #cf6357;
           display: block;
           cursor: pointer;
@@ -640,21 +640,21 @@ section .skill-lockup {
           .projects-section #proj-container .control-bars .left_side .prev:hover {
             opacity: 1; }
           .projects-section #proj-container .control-bars .left_side .prev .icon-chevron-thin-left {
-            line-height: 80px;
+            line-height: 60px;
             margin: 0 auto;
-            font-size: 3em;
+            font-size: 2em;
             color: #d89993; }
       .projects-section #proj-container .control-bars .right_side {
-        height: 80px;
-        width: 80px;
+        height: 60px;
+        width: 60px;
         position: absolute;
         right: 0px;
         z-index: 99;
         padding: 10px 10px 0 0;
         top: 0px; }
         .projects-section #proj-container .control-bars .right_side .next {
-          height: 80px;
-          width: 80px;
+          height: 60px;
+          width: 60px;
           background-color: #cf6357;
           display: block;
           cursor: pointer;
@@ -666,8 +666,8 @@ section .skill-lockup {
           .projects-section #proj-container .control-bars .right_side .next:hover {
             opacity: 1; }
           .projects-section #proj-container .control-bars .right_side .next .icon-chevron-thin-right {
-            line-height: 80px;
-            font-size: 3em;
+            line-height: 60px;
+            font-size: 2em;
             margin: 0 auto;
             color: #d89993; }
 
@@ -715,7 +715,7 @@ section .skill-lockup {
       height: 30px; } }
 footer {
   bottom: 0px;
-  background: url(../img/108H.jpg) center center;
+  background: url(../img/bg/mountain7.jpg) center center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
   position: relative;
@@ -756,16 +756,16 @@ footer {
         display: block;
         float: right;
         font-size: 12px;
-        color: rgba(0, 0, 0, 0.5);
+        color: #cf6357;
         padding: 10px 30px; }
       footer .lockup .content-wrap a {
-        color: rgba(0, 0, 0, 0.5);
+        color: #fff;
         display: inline-block;
-        padding: 90px 10px 0 10px;
+        padding: 90px 8px 0 8px;
         margin: 0 20px;
         transition: 0.2s ease-out; }
         footer .lockup .content-wrap a:hover {
-          color: rgba(0, 0, 0, 0.7); }
+          color: #FFF498; }
 
 @media (max-width: 640px) {
   footer .lockup {
