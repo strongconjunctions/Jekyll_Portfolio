@@ -6,13 +6,10 @@ section
   .face-lockup
     max-width: 745px
     +display(flex)
-    // bourbon mixin, which turns your object into a flex box to easily arrange elements
     margin: 0 auto
     padding: 0 40px 40px
     +align-items(center)
-    // this will align the items inside the block horizontally
     +justify-content(space-between)
-    // this will distribute the items inside evenly across the block space in width
 
 
     .face-img
@@ -36,9 +33,7 @@ section
 
     [class^="icon-"]
       +size(100px)
-      // background-color: $bgcolor
       border-radius: 50%
-      // "[class^="icon-"]" is a cool selector, which basically says, select a class, as long as (^) it includes this element (icon-);'border-radius: 50%' turns a square into a circle
 
       opacity: .5
       cursor: pointer

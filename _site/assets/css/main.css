@@ -282,7 +282,6 @@ td, th {
 .icon-chevron-thin-right:before {
   content: "\e602"; }
 
-/* $bg-color: #F6F6F8 */
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #BD5248;
@@ -950,28 +949,6 @@ footer {
     display: none;
     width: 0px;
     height: 0px; } }
-/*         .quotes
- * +position(absolute, -50px null null 40px)
- * opacity: 0.3
- *
- * path
- *   fill: $main-red */
-/*   .client-logos
- * position: relative
- * max-width: 850px
- * margin: 350px auto 100px
- * +display(flex)
- * +align-items(center)
- * +justify-content(space-around)
- *
- *
- * .cl-logo
- *   cursor: pointer
- *   width: 100%
- *   margin: 0 20px
- *
- *   &.active-section
- *     box-shadow: 0px 10px 0px #fff, 0px 13px 0px $main-red */
 .social-links {
   max-width: 760px;
   margin: 0px auto 70px;
