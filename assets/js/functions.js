@@ -37,10 +37,11 @@ $(function() {
 
 
 
+
 // PROJECTS SECTION CODE
 
 var imgCount = 1;
-var total = 8;
+var total = 9;
 
 function slide(x) {
 	var Image = document.getElementById('img');
