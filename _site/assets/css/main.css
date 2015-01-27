@@ -519,8 +519,8 @@ section .face-lockup {
   justify-content: space-between;
   -ms-flex-pack: justify; }
   section .face-lockup .face-img {
-    height: 185px;
-    width: 185px;
+    height: 180px;
+    width: 180px;
     order: 3;
     border-radius: 50%;
     background-position: center center;
